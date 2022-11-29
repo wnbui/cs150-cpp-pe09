@@ -19,14 +19,11 @@ using namespace std;
 
 const char * firstOfAny(const char * str1, const char * str2)
 {
-    // temp pointer to substr (to reset the search)
-       auto * p1 = str2;
-       
        // while str1 is true (not null)
        while (*str1)
        {
           // pointer set to str2 (through p1)
-          auto * p2 = p1;
+          auto * p2 = str2;
           // while iterating through str2 (p2) and *str1 does not match *str2 (p2)
           while (*p2 && *str1 != *p2)
           {
